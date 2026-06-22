@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 1d62ef2ad5533ee49b92e7a327edb2ba
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - zombiPrefab: {fileID: 7876866853067834524, guid: 0b310293dd121f44baa44d1dff28b7de, type: 3}
+  - dalgaYazisi: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: c7e7dacefe13a9045a700ad1e2de8d0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5744878379245426242
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_0"
+  - first:
+      213: -6710157106995844321
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_1"
+  - first:
+      213: -1416360744551480048
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_2"
+  - first:
+      213: 5055939200879534423
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_3"
+  - first:
+      213: 8003438255927391922
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_4"
+  - first:
+      213: -532600855221175881
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_5"
+  - first:
+      213: 7046879782780800941
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_6"
+  - first:
+      213: -6360268921299642798
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_7"
+  - first:
+      213: 5559736859317174136
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_8"
+  - first:
+      213: -3301461296237614294
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_9"
+  - first:
+      213: -333188638136036522
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_10"
+  - first:
+      213: -6016602998709756568
+    second: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_11"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_0"
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2323
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9214f3d871640b0800000000000000
+      internalID: -5744878379245426242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_1"
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2358
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b2372c9abb0e2a0800000000000000
+      internalID: -6710157106995844321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_2"
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 2838
+        height: 3000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01583333863185ce0800000000000000
+      internalID: -1416360744551480048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_3"
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1508
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751a56a6aed4a2640800000000000000
+      internalID: 5055939200879534423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_4"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1466
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6f25290bce11f60800000000000000
+      internalID: 8003438255927391922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_5"
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1408
+        width: 67
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9f8711852db98f0800000000000000
+      internalID: -532600855221175881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_6"
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1289
+        width: 78
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf088393db8bc160800000000000000
+      internalID: 7046879782780800941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_7"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1153
+        width: 131
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2565afd3d19cbb7a0800000000000000
+      internalID: -6360268921299642798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_8"
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1205
+        width: 121
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ffe308737282d40800000000000000
+      internalID: 5559736859317174136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_9"
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1014
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b6e06617ade22d0800000000000000
+      internalID: -3301461296237614294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_10"
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1034
+        width: 74
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65394bce2b6406bf0800000000000000
+      internalID: -333188638136036522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014red blood splatter overlay design_18731106_11"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 758
+        width: 145
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dda53337bb08ca0800000000000000
+      internalID: -6016602998709756568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a6d68a6717c1c2542bbecb3eaa84d2d0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
+    nameFileIdTable:
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_0": -5744878379245426242
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_1": -6710157106995844321
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_10": -333188638136036522
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_11": -6016602998709756568
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_2": -1416360744551480048
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_3": 5055939200879534423
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_4": 8003438255927391922
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_5": -532600855221175881
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_6": 7046879782780800941
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_7": -6360268921299642798
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_8": 5559736859317174136
+      "\u2014Pngtree\u2014red blood splatter overlay design_18731106_9": -3301461296237614294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
