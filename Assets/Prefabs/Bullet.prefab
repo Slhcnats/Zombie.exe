@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletDeleted
   zombiOlumSesi: {fileID: 8300000, guid: b24406f759ab6ff42941729ca2abe66f, type: 3}
-  cesetPrefab: {fileID: 1973945286282871568, guid: 9263447a3eeccb441ab8a857ef00e4fb,
+  kanLekesi: {fileID: 5055939200879534423, guid: c7e7dacefe13a9045a700ad1e2de8d0a,
     type: 3}
 --- !u!61 &2958547795161548533
 BoxCollider2D:

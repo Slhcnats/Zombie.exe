@@ -59,7 +59,9 @@ public class ZombieAI : MonoBehaviour
 
                 if (ph != null)
                 {
-                    ph.TakeDamage(20);
+                    BossZombiDayaniklilik boss = GetComponent<BossZombiDayaniklilik>();
+                    int verilecekHasar = boss != null ? ph.maxHealth : 20;
+                    ph.TakeDamage(verilecekHasar);
                     sonHasarZamani = Time.time;
                 }
             }
