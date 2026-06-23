@@ -2567,7 +2567,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 960543393}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OyunuYenidenBaslat
+        m_MethodName: AnaMenuyeDon
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

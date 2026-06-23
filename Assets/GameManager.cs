@@ -37,7 +37,6 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI rekorText;
     private string lesEtiketi;
     private string dalgaEtiketi;
-    private string sureEtiketi;
     private GameObject reklamPaneli;
     private TextMeshProUGUI reklamSayacText;
     private Button reklamDevamButonu;
@@ -60,7 +59,7 @@ public class GameManager : MonoBehaviour
         }
 
         RekorYazisiniHazirla();
-        OyunSonuDegerleriniHazirla();
+        HayattaKalmaMetniniGizle();
         OyunSonuEtiketleriniHatirla();
         ReklamDevamButonunuHazirla();
     }
@@ -98,8 +97,9 @@ public class GameManager : MonoBehaviour
         // --- KLASİK RETRO TEMASI UYGULANDI ---
 
         RekorlariGuncelle(gecenSureSaniye);
-        OyunSonuDegerleriniGuncelle(gecenSureSaniye);
+        OyunSonuDegerleriniGuncelle();
         OyunHudunuAyarla(false);
+        ReklamDevamButonunuGoster();
 
         if (gameOverPanel != null)
         {
@@ -121,41 +121,76 @@ public class GameManager : MonoBehaviour
         OyunuBitir();
     }
 
-    private void OyunSonuDegerleriniHazirla()
+    private void OyunSonuEtiketleriniHatirla()
     {
         if (gameOverPanel == null) return;
 
-        if (sureText == null)
+        // Sahne referanslari eksikse, kullanicinin panelde yazdigi iki etiketi bul.
+        foreach (TextMeshProUGUI metin in gameOverPanel.GetComponentsInChildren<TextMeshProUGUI>(true))
         {
-            Transform sureEtiketi = gameOverPanel.transform.Find("SureSkorText");
-            if (sureEtiketi != null) sureText = sureEtiketi.GetComponent<TextMeshProUGUI>();
+            string icerik = metin.text.ToUpperInvariant();
+            if (waveText == null && icerik.StartsWith("DALGA")) waveText = metin;
+            if (lesSayisiText == null && icerik.StartsWith("CESET")) lesSayisiText = metin;
         }
 
+        lesEtiketi = EtiketMetniniTemizle(lesSayisiText);
+        dalgaEtiketi = EtiketMetniniTemizle(waveText);
     }
 
-    private void OyunSonuEtiketleriniHatirla()
+    private string EtiketMetniniTemizle(TextMeshProUGUI etiket)
     {
-        lesEtiketi = lesSayisiText != null ? lesSayisiText.text : string.Empty;
-        dalgaEtiketi = waveText != null ? waveText.text : string.Empty;
-        sureEtiketi = sureText != null ? sureText.text : string.Empty;
+        if (etiket == null) return string.Empty;
+
+        etiket.textWrappingMode = TextWrappingModes.NoWrap;
+        etiket.overflowMode = TextOverflowModes.Overflow;
+
+        string metin = etiket.text;
+        int renkBaslangici = metin.IndexOf("<color", System.StringComparison.OrdinalIgnoreCase);
+        if (renkBaslangici >= 0) metin = metin.Substring(0, renkBaslangici);
+
+        return metin.TrimEnd(' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
     }
 
-    private void OyunSonuDegerleriniGuncelle(int gecenSureSaniye)
+    private void OyunSonuDegerleriniGuncelle()
     {
-        if (sureText == null)
+        if (string.IsNullOrEmpty(lesEtiketi) || string.IsNullOrEmpty(dalgaEtiketi))
         {
-            OyunSonuDegerleriniHazirla();
             OyunSonuEtiketleriniHatirla();
         }
 
         if (lesSayisiText != null) lesSayisiText.text = lesEtiketi + " <color=#FFFFFF>" + zombiLesSayisi + "</color>";
         if (waveText != null) waveText.text = dalgaEtiketi + " <color=#FFFFFF>" + atlatilanWave + "</color>";
-        if (sureText != null) sureText.text = sureEtiketi + " <color=#FFFFFF>" + SaniyeyiFormatla(gecenSureSaniye) + "</color>";
+    }
+
+    private void HayattaKalmaMetniniGizle()
+    {
+        if (gameOverPanel == null) return;
+
+        TextMeshProUGUI[] metinler = gameOverPanel.GetComponentsInChildren<TextMeshProUGUI>(true);
+        foreach (TextMeshProUGUI metin in metinler)
+        {
+            if (metin.text.ToUpperInvariant().Contains("HAYATTA"))
+            {
+                metin.gameObject.SetActive(false);
+            }
+        }
     }
 
     private void ReklamDevamButonunuHazirla()
     {
-        if (gameOverPanel == null || gameOverPanel.transform.Find("ReklamDevamButonu") != null) return;
+        if (gameOverPanel == null) return;
+
+        Transform mevcutButon = gameOverPanel.transform.Find("ReklamDevamButonu");
+        if (mevcutButon != null)
+        {
+            reklamDevamButonu = mevcutButon.GetComponent<Button>();
+            if (reklamDevamButonu != null)
+            {
+                reklamDevamButonu.onClick.RemoveListener(ReklamIzlemeyiBaslat);
+                reklamDevamButonu.onClick.AddListener(ReklamIzlemeyiBaslat);
+            }
+            return;
+        }
 
         GameObject bilgiObjesi = new GameObject("ReklamBilgiYazisi", typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
         bilgiObjesi.transform.SetParent(gameOverPanel.transform, false);
@@ -194,6 +229,18 @@ public class GameManager : MonoBehaviour
         reklamDevamButonu.colors = renkler;
         reklamDevamButonu.onClick.AddListener(ReklamIzlemeyiBaslat);
 
+    }
+
+    private void ReklamDevamButonunuGoster()
+    {
+        ReklamDevamButonunuHazirla();
+        if (gameOverPanel == null) return;
+
+        Transform bilgi = gameOverPanel.transform.Find("ReklamBilgiYazisi");
+        if (bilgi != null) bilgi.gameObject.SetActive(true);
+
+        Transform buton = gameOverPanel.transform.Find("ReklamDevamButonu");
+        if (buton != null) buton.gameObject.SetActive(true);
     }
 
     private void ReklamIzlemeyiBaslat()
@@ -316,7 +363,7 @@ public class GameManager : MonoBehaviour
         rekorText.fontSize = 22f;
         rekorText.alignment = TextAlignmentOptions.Center;
         rekorText.color = new Color(1f, 0.82f, 0.2f);
-        rekorText.enableWordWrapping = false;
+        rekorText.textWrappingMode = TextWrappingModes.NoWrap;
     }
 
     private void RekorlariGuncelle(int gecenSureSaniye)
@@ -350,5 +397,13 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void AnaMenuyeDon()
+    {
+        if (hoparlor != null) hoparlor.Stop();
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 }
