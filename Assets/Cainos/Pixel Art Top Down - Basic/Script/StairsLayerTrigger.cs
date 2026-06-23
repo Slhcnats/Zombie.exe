@@ -38,6 +38,10 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private void SetLayerAndSortingLayer( GameObject target, string layer, string sortingLayer )
         {
+            // Player and zombies use Sprite-Lit materials. Moving them to the stair
+            // sorting layers can place them outside the scene's Global Light target.
+            if (target.CompareTag("Player") || target.CompareTag("Zombie")) return;
+
             target.layer = LayerMask.NameToLayer(layer);
 
             target.GetComponent<SpriteRenderer>().sortingLayerName = sortingLayer;
